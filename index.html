@@ -1,421 +1,788 @@
+
+
 <!DOCTYPE html>
 <html lang="en" >
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900'>
-        <!-- Link Icon -->
-        <link href='images/logo.png' rel='icon' type='image/x-icon'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='57x57'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='72x72'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='76x76'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='114x114'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpgg' rel='apple-touch-icon' sizes='120x120'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='144x144'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='152x152'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon' sizes='180x180'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='icon' sizes='192x192' type='image/png'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='icon' sizes='96x96' type='image/png'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='icon' sizes='32x32' type='image/png'/>
-        <link href='https://i.imgur.com/DFB9dAr.jpg' rel='msapplication-TitleImage'/>
-        <!-- Theme Color -->
-        <meta content='#f7f9f8' name='theme-color'/>
-        <meta content='#f7f9f8' name='msapplication-navbutton-color'/>
-        <meta content='#f7f9f8' name='apple-mobile-web-app-status-bar-style'/>
-        <meta content='yes' name='apple-mobile-web-app-capable'/>
-        <title>Welcome new students 2020</title>
-        <style>
-            *, *:before, *:after {
-            box-sizing: border-box;
-            }
-            h1 {
-            margin-top: 0;
-            margin-bottom: 0.25em;
-            font-size: 2em;
-            font-weight: 900;
-            line-height: 0.9;
-            }
-            p {
-            margin: 0;
-            color: #a9b1b3;
-            }
-            a {
-            padding: 0.5em 1em;
-            font-size: 0.8em;
-            color: #a9b1b3;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            border: 1px solid #a9b1b3;
-            -webkit-transition: all 0.3s ease-in;
-            transition: all 0.3s ease-in;
-            }
-            a:hover, a:active, a:focus {
-            color: #fff;
-            background-color: #a9b1b3;
-            }
-            figure {
-            margin: 0;
-            }
-            /**
-            * Text Selection
-            */
-            ::-moz-selection {
-            color: #fff;
-            background-color: #d0f2ee;
-            text-shadow: none;
-            }
-            ::selection {
-            color: #fff;
-            background-color: #d0f2ee;
-            text-shadow: none;
-            }
-            /**
-            * Body
-            */
-            body {
-            font-family: monospace;
-            font-size: 100%;
-            line-height: 1.6;
-            color: #000;
-            background-color: #fff;
-            }
-            @media (min-width: 20em) {
-            body {
-            font-size: 102.5%;
-            }
-            }
-            @media (min-width: 30em) {
-            body {
-            font-size: 105%;
-            }
-            }
-            @media (min-width: 54em) {
-            body {
-            font-size: 107.5%;
-            }
-            }
-            @media (min-width: 64em) {
-            body {
-            font-size: 110%;
-            }
-            }
-            @media (min-width: 76.5em) {
-            body {
-            font-size: 115%;
-            }
-            }
-            @media (min-width: 114em) {
-            body {
-            font-size: 125%;
-            }
-            }
-            /**
-            * Components
-            */
-            .post {
-            min-height: 100vh;
-            width: 100%;
-            border: 0.5em solid #fff;
-            margin-bottom: 10%;
-            }
-            @media (min-width: 54em) {
-            .post {
-            display: -webkit-box;
-            display: flex;
-            height: 100vh;
-            min-height: 40em;
-            }
-            }
-            .post > *:first-child {
-            position: relative;
-            height: 14em;
-            background-color: #000;
-            }
-            @media (min-width: 30em) {
-            .post > *:first-child {
-            height: 18em;
-            }
-            }
-            @media screen and (max-width: 768px) {
-                .post > *:first-child {
-                flex-basis: 50%;
-                max-width: 50%;
-                height: auto;
-                }
-            }
-            @media (min-width: 54em) {
-            .post > *:first-child {
-            flex-basis: 50%;
-            max-width: 50%;
-            height: auto;
-            }
-            }
-            @media (min-width: 76.5em) {
-            .post > *:first-child {
-            flex-basis: 60%;
-            max-width: 60%;
-            }
-            }
-            @media (min-width: 54em) {
-            .post > *:last-child {
-            flex-basis: 50%;
-            max-width: 50%;
-            }
-            }
-            @media (min-width: 76.5em) {
-            .post > *:last-child {
-            flex-basis: 40%;
-            max-width: 40%;
-            }
-            }
-            .post__container {
-            display: -webkit-box;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-            flex-direction: column;
-            -webkit-box-pack: justify;
-            justify-content: space-between;
-            padding: 2em;
-            overflow-y: auto;
-            }
-            .post__category {
-            position: relative;
-            font-weight: 600;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
-            overflow: hidden;
-            }
-            .post__category:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            height: 2px;
-            width: 50%;
-            background-color: #000;
-            -webkit-animation: slide-in 1s ease-in both 0.5s;
-            animation: slide-in 1s ease-in both 0.5s;
-            }
-            .post__content {
-            padding: 2em 0;
-            }
-            @media (min-width: 54em) {
-            .post__content {
-            padding: 0 4em;
-            }
-            }
-            .post__time {
-            display: inline-block;
-            margin-bottom: 0.5em;
-            font-weight: 600;
-            font-size: 0.8em;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            }
-            .post__header span {
-            display: inline-block;
-            -webkit-animation: slide-up 0.8s ease-in-out both;
-            animation: slide-up 0.8s ease-in-out both;
-            }
-            .post__header span:nth-child(1) {
-            -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s;
-            }
-            .post__header span:nth-child(2) {
-            -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-            }
-            .post__header span:nth-child(3) {
-            -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-            }
-            .post__text {
-            font-weight: 300;
-            -webkit-animation: fade-in 0.8s ease-in-out both 0.5s;
-            animation: fade-in 0.8s ease-in-out both 0.5s;
-            }
-            .post__link {
-            text-align: right;
-            }
-            /**
-            * Helpers
-            */
-            .absolute-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            background-position: 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-            -webkit-animation: fade-in 0.8s ease-in-out both 1s;
-            animation: fade-in 0.8s ease-in-out both 1s;
-            }
-            /**
-            * Animations
-            */
-            @-webkit-keyframes slide-in {
-            0% {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            }
-            100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            }
-            }
-            @keyframes slide-in {
-            0% {
-            -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-            }
-            100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            }
-            }
-            @-webkit-keyframes slide-up {
-            0% {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-            }
-            90% {
-            opacity: 1;
-            }
-            100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            }
-            }
-            @keyframes slide-up {
-            0% {
-            opacity: 0;
-            -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
-            }
-            90% {
-            opacity: 1;
-            }
-            100% {
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            }
-            }
-            @-webkit-keyframes fade-in {
-            0% {
-            opacity: 0;
-            }
-            100% {
-            opacity: 1;
-            }
-            }
-            @keyframes fade-in {
-            0% {
-            opacity: 0;
-            }
-            100% {
-            opacity: 1;
-            }
-            }
-            .section {
-                min-height: 90vh;
-                position: relative;
-                overflow: hidden;
-            }
-            .section-one {
-                background: #222;
-                color: #ddd;
-            }
-            section {
-                display: block;
-                *zoom: 1;
-                display: block;
-            }
-            .section .section-title {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                z-index: 5;
-                font-size: 3em;
-            }
-            .bg-fadein {
-                height: 100%;
-                width: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-image: url(https://i.imgur.com/HwAUTEe.jpg);
-                background-size: cover;
-                background-position: center center;
-                opacity: 0.45;
-                display: none;
-            }
-            .footer {
-                position: fixed;
-                bottom: 0;
-                left: 0;
-                padding: 20px;
-                background-color: #000;
-                width: 100%;
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body translate="no" >
-        <article class="post">
-            <section class="section-one section" style="min-height: 565px;">
-                <h2 class="section-title greeting">TÂN SINH VIÊN 2020</h2>
-                <div class="bg-fadein" style="display: block;"></div>
-            </section>
-            <div class="post__container">
-                <span class="post__category">SVCG HẠT LẠC ĐẠO - LIỄU ĐỀ - QUỸ NHẤT</span>
-                <div class="post__content">
-                    <header>
-                        <time class="post__time">Thứ Năm, lúc 16h ngày 22 tháng 10 năm 2020</time>
-                        <h1 class="post__header">Giáo xứ Phùng Khoang</h1>
-                    </header>
-                    <h3>I. MỤC ĐÍCH</h3>
-                    <p class="post__text">Quy tụ anh chị em sinh viên đang sinh sống, làm việc và học tập tại Hà Nội để cùng nhau xây dựng một môi trường học tập, sinh hoạt lành mạnh, cùng nhau gìn giữ đức tin cũng như giúp đỡ nhau trong cuộc sống thường ngày nơi Thủ Đô.</p>
-                    <h3>II. THỜI GIAN & ĐỊA ĐIỂM</h3>
-                    <p class="post__text">
-                        <p>- Thời gian: Thứ Năm lúc 16h, ngày 22 tháng 10 năm 2020</p>
-                        <p>- Địa điểm: Tại nhà thờ giáo xứ Phùng Khoang, Trung Văn, Nam Từ Liêm, Hà Nội</p>
-                    </p>
-                    <h3>III. CHƯƠNG TRÌNH</h3>
-                    <p class="post__text">
-                        <p>- 16h - 17h: Đón tiếp, ghi danh</p>
-                        <p>- 17h - 17h30: Khởi động và giải tội</p>
-                        <p>- 17h30 – 18h: Chia sẻ </p>  
-                        <p>- 18h - 19h: Sinh hoạt chung và tập hát </p>
-                        <p>- 19h - 20h: Thánh lễ </p> 
-                        <p>- 20h - 21h: Tiệc nhẹ, sinh hoạt, giao lưu văn nghệ </p>
-                        <p>- 21h - 21h30: Trao quà cho tân sinh viên</p>
-                        <p>- 21h30 - 22h: Cầu nguyện </p>
-                        <p>- Sau 22h: Dọn dẹp, chia tay.</p>
-                    </p>
-                    <h3>IV. CHI PHÍ</h3>
-                    <p class="post__text">- Kinh phí: 50.000đ/ 1 người (Sale: 80.000đ/ 2 người)</p>
-                    <h3>V. LƯU Ý</h3>
-                    <p class="post__text">
-                        - Khi đăng ký nhớ điền đầy đủ và thông tin chính xác để BTC sắp xếp và chuẩn bị cho các bạn.
-                    </p>
-                </div>
-                <div class="post__link">
-                    <a href="https://bom.to/welcomestudents2020">Nhấp vào đây để đăng ký</a>
-                </div>
-            </div>
-        </article>
-        <footer class="footer">
-            <a href="https://bom.to/welcomestudents2020">Đăng ký ngay</a>
-        </footer>
-    </body>
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - My FCC Personal Portfolio Webpage (full view)</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,100' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.css'>
+  
+<style>
+/* ==========================================================================
+=General Styles
+========================================================================== */
+
+body {
+	background-color: #111;
+	color: #aaa;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 28px;
+	margin: 0;
+}
+
+.page-sections {
+	position: relative;
+}
+
+.top-padding {
+	padding-top: 5%;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover, a:focus {
+	color: #46cdcf;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.current {
+	background-color: #46cdcf;
+}
+
+
+/* ==========================================================================
+=Typography
+========================================================================== */
+
+h1 {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	font-weight: 100;
+	line-height: 49px;
+}
+
+h2 {
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	line-height: 40px;
+}
+
+p {
+	color: #aaa;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+}
+
+
+/* ==========================================================================
+=welcome-section (Header)
+========================================================================== */
+
+#welcome-section {
+	background: url(https://himigatliwanag.files.wordpress.com/2016/01/bg.jpg) top center no-repeat scroll #111;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+	min-height: inherit;
+	padding: 40px 10px 60px 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+.logo {
+}
+
+.header-info {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	right: 0;
+	margin-left: 0px;
+	margin-bottom: 11%;
+}
+
+#top-nav {
+	margin-top: 50px;
+}
+	#top-nav a {
+		display: inline-block;
+		min-width: 100px;
+	}
+
+	#top-nav a:hover,
+	#top-nav a:active,
+	#top-nav a:focus {
+		text-decoration: none;
+	}
+
+	#top-nav a:hover .bb-animate {
+		background: #46cdcf;
+		width: 100%;
+	}
+
+	#top-nav img {
+		margin-bottom: 10px;
+		opacity: .7;
+	}
+
+	.bb-animate {
+		display: block;
+		height: 1px;
+		width: 0;
+		background: rgba(255,255,255,0);
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+
+#navbar {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	right: 50px;
+	top: 50%;
+	width: 26px;	
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+	#navbar a {
+		-webkit-transition: all .2s ease-in-out;
+		-moz-transition: all .2s ease-in-out;
+		-o-transition: all .2s ease-in-out;
+		transition: all .2s ease-in-out;
+	}
+
+	#navbar a:hover, #navbar .active {
+		background-color: #46cdcf;
+	}
+
+.menu-links {
+	display: inline-block;
+	font-size: 15px;
+	margin: 13px 0;
+	min-width: 16px;
+	padding: 10px 20px;
+}
+	.menu-links:hover, .menu-links:active, .menu-links:focus {
+		text-decoration: none;
+	}
+
+	.menu-links img {
+		min-width: 16px;
+	}
+
+.transition {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+
+/* ==========================================================================
+=ABOUT SECTION
+========================================================================== */
+
+.scoopy {
+	background: url(https://himigatliwanag.files.wordpress.com/2016/01/scoopy.jpg) bottom left;
+	height: 495px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.skills {
+	margin-bottom: 10px;
+}
+
+.skills img {
+	margin: 10px;
+}
+
+.skills img:first-child {
+	margin-left: 0;
+}
+
+.description {
+	padding: 12px 50px;
+	border: 1px solid #4d4d4d;
+}
+
+
+/* ==========================================================================
+=PORTFOLIO SECTION
+========================================================================== */
+
+#sec3 {
+	background: url(https://himigatliwanag.files.wordpress.com/2016/01/milky-way.jpg) top center fixed no-repeat;
+	/*background-size: cover;*/
+}
+
+.slick-slide img {
+	margin: 0 auto;
+}
+
+.slick-slide {
+	outline: none;
+}
+
+.slick-dots li button:before {
+	color: #aaa;
+}
+
+.slick-dots li.slick-active button:before {
+	color: white;
+}
+
+.slick-custom-nav {
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.slick-slide a:focus {
+	cursor: move;
+}
+
+.prev-slide {
+	float: left;
+}
+
+.next-slide {
+	float: right;
+}
+
+
+/* ==========================================================================
+=CONTACT SECTION
+========================================================================== */
+
+#sec4 {
+	width: 100%;
+}
+
+.contact-info {	
+	background: url(https://himigatliwanag.files.wordpress.com/2016/01/ocean.jpg) repeat;
+	padding: 80px 50px;
+}
+
+.contact-info a:hover {
+  text-decoration: none;
+}
+
+.email-link {
+	margin-top: 50px;
+}
+
+/* ==========================================================================
+=FOOTER SECTION
+========================================================================== */
+
+footer {
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	width: 100%;
+}
+
+@media only screen and ( max-width: 991px ) {
+	.slick-custom-nav {
+	    margin-top: 0;
+	    cursor: pointer;
+	}
+}
+
+@media only screen and ( max-width: 930px ) {
+
+#navbar {
+		position: fixed;
+		bottom: -1px;
+		right: auto;
+		top: auto;
+		width: 100%;
+  		height: 45px;
+  		transform: none;
+  		text-align: center;
+  		background-color: #3F3F3F;
+}
+	#navbar a {
+		display: inline-block;
+		height: 45px;
+		width: 18%;
+		margin: 0;
+		border: none;
+	}
+}
+
+@media only screen and ( max-width: 1200px ) {
+	.scoopy {
+		height: 544px;
+	}
+	
+	.skills img {
+	   margin: 10px 5px;
+	   height: 29px;
+	}
+}
+
+@media only screen and ( max-width: 320px ) {
+	h1 {
+		line-height: 41px;
+	}
+}
+
+@media only screen and ( max-width: 490px ) {
+
+	.header-info h1 {
+		font-size: 30px;
+	}
+}
+
+@media only screen and ( max-width: 414px ) {
+ 	.scoopy {
+		height: 300px;
+ 	}
+
+ 	.description {
+ 		padding: 12px 20px;
+ 	}
+}
+
+@media only screen and ( max-width: 409px ) {
+ 	.header-info br {
+		display: none;
+	}
+}
+
+@media only screen and ( max-width: 365px ) {
+	.email-link h3 {
+		font-size: 18px;
+	}
+}
+
+
+
+/* HEIGHT */
+
+@media only screen and ( max-height: 414px ) {
+	.header-info {
+		margin-bottom: 4%;
+	}
+
+	#top-nav {
+		margin-top: 40px;
+	}
+
+	.scoopy {
+		height: 200px;
+	}
+}
+
+@media only screen and ( max-height: 320px ) {
+	.header-info {
+		margin-bottom: 3%;
+	}
+
+ 	.header-info h1 {
+		font-size: 20px;
+		line-height: 29px;
+ 	}
+
+ 	#top-nav {
+		margin-top: 30px;
+	}
+
+	.scoopy {
+		height: 160px;
+	}
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div id="msl">
+	<nav id="navbar">
+		<a class="menu-links" href="#welcome-section"><img src="https://himigatliwanag.files.wordpress.com/2016/01/home-mini.png" alt=""></a>
+		<a class="menu-links" href="#sec2"><img src="https://himigatliwanag.files.wordpress.com/2016/01/about-mini.png" alt=""></a>
+		<a class="menu-links" href="#sec3"><img src="https://himigatliwanag.files.wordpress.com/2016/01/portfolio-mini.png" alt=""></a>
+		<a class="menu-links" href="#sec4"><img src="https://himigatliwanag.files.wordpress.com/2016/01/contact-mini.png" alt=""></a>
+	</nav>
+
+	<section id="welcome-section" class="page-sections">
+		<div class="container">
+			<div class="row">
+				<img src="https://himigatliwanag.files.wordpress.com/2016/01/logo.png" alt="Lam - Design and Development" class="logo center-block">
+			</div>
+
+			<div class="row header-info">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<h1>Hello world, my name is Lam. <br>Front-end Developer from Laguna, Philippines.</h1>
+
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
+							<div id="top-nav" class="row">
+
+									<a href="#welcome-section" style="display: none;">
+										<p>Home</p>
+									</a>
+								
+									<a href="#sec2">
+										<img src="https://himigatliwanag.files.wordpress.com/2016/01/about.png" alt="About">
+										<p>About</p>
+										<span class="bb-animate"></span>
+									</a>								
+								
+									<a href="#sec3">
+										<img src="https://himigatliwanag.files.wordpress.com/2016/01/portfolio.png" alt="Portfolio">
+										<p>Portfolio</p>
+										<span class="bb-animate"></span>
+									</a>								
+								
+									<a href="#sec4">
+										<img src="https://himigatliwanag.files.wordpress.com/2016/01/contact.png" alt="Contact">
+										<p>Contact</p>
+										<span class="bb-animate"></span>
+									</a>								
+							</div>
+						</div>
+					</div>
+
+				</div>				
+			</div>
+
+		</div>
+	</section>
+
+	<section id="sec2" class="page-sections">
+		<div class="container top-padding">
+			<div class="row">
+				<div class="col-md-5 col-md-offset-1">
+					<div class="scoopy"></div>
+				</div>
+
+				<div class="col-md-5">
+					<div class="description">
+						<h2>About</h2>
+
+						<p>I’ve been designing and building websites since 2012. In my years of experience I learned a lot of things about good practices in coding, UX / UI, PHP Wordpress, basic javascript algorithms and the importance of content in web design.</p>
+
+						<p><strong>SKILLS:</strong></p>
+
+						<div class="skills">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/html5.png" alt="HTML5">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/css3.png" alt="CSS3">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/javascript.png" alt="Javascript">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/wordpress.png" alt="Wordpress">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/photoshop.png" alt="Photoshop">
+							<img src="https://himigatliwanag.files.wordpress.com/2016/01/illustrator.png" alt="Illustrator">
+						</div>
+
+						<p><strong>EXPERIENCE:</strong></p>
+
+						<p>2011 - 2012, Asecasia Inc. - Graphic Artist<br>
+						2012 - 2015, AGR Operations Manila - Web Developer<br>
+						Present: Front-End Developer</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sec3" class="page-sections">
+		<div class="container top-padding">
+
+			<div class="row text-center">
+				<div class="col-md-10 col-md-offset-1">
+					<img aria-disabled class="prev-slide slick-custom-nav" src="https://himigatliwanag.files.wordpress.com/2016/01/slick-prev-fill.png" alt="">
+					<img aria-disabled class="next-slide slick-custom-nav" src="https://himigatliwanag.files.wordpress.com/2016/01/slick-next-fill.png" alt="">
+
+					<h2>My Portfolio</h2>
+
+					<p>(swipe left or right to navigate.)</p>
+			
+					<div id="projects" class="portfolio-slider">
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port1.jpg" alt=""></a></div>
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port2.jpg" alt=""></a></div>
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port3.jpg" alt=""></a></div>
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port4.jpg" alt=""></a></div>
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port5.jpg" alt=""></a></div>
+						<div><a href="#" class="project-tile"><img src="https://himigatliwanag.files.wordpress.com/2016/01/port6.jpg" alt=""></a></div>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section id="sec4" class="page-sections">
+		<div class="container top-padding">
+			<div class="row text-center">
+				<h2 class="">Contact</h2>
+
+				
+				<div class="contact-info col-md-10 col-md-offset-1">
+					<div class="social-media">
+						<p><strong>LET'S BE FRIENDS</strong></p>
+
+						<h3><a href="#">facebook</a> &bull; <a href="#">linkedin</a> &bull; <a href="#">twitter</a> &bull; <a href="#">steam</a> &bull; <a href="https://www.freecodecamp.org/stoic25" target="_blank" id="profile-link">free code camp</a> &bull; <a href="#">github</a></h3>
+					</div>
+
+					<div class="email-link">
+						<p><strong>OR DROP ME AN EMAIL</strong></p>
+						<h3><a href="#"><span class="__cf_email__" data-cfemail="8be7eae6f8e6eae7e7eaf9e2e1f9cbece6eae2e7a5e8e4e6">[email&#160;protected]</span></a></h3>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+</div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js'></script>
+  
+      <script id="rendered-js" >
+// SCROLL LAYOUT WITH EASING
+var ScrollLayout = function () {
+
+  // cache and initialize some values
+  var config = {
+    // the cbp-fbscroller's sections
+    $sections: $('#msl > section'),
+    // the navigation links
+    $navlinks: $('#msl > nav > a'),
+    // custom: homenav
+    $homenav: $('#top-nav > a'),
+    // index of current link / section
+    currentLink: 0,
+    // index of current link / section
+    $body: $('html, body'),
+    // the body animation speed
+    animspeed: 1050,
+    // the body animation easing (jquery easing)
+    animeasing: 'easeInOutExpo' };
+
+
+  function init() {
+
+    // custom: homenav
+    config.$homenav.on('click', function () {
+      scrollAnim(config.$sections.eq($(this).index()).offset().top);
+      return false;
+    });
+
+    // click on a navigation link: the body is scrolled to the position of the respective section
+    config.$navlinks.on('click', function () {
+      scrollAnim(config.$sections.eq($(this).index()).offset().top);
+      return false;
+    });
+
+    var waypoints = $('#sec2').waypoint({
+      handler: function (direction) {
+        $('#navbar').fadeToggle("fast", "linear");
+      },
+      offset: '50%' });
+
+
+
+  }
+
+  // function to scroll / animate the body
+  function scrollAnim(myTop) {
+    config.$body.stop().animate({ scrollTop: myTop }, config.animspeed, config.animeasing);
+  }
+
+  return { init: init };
+
+}();
+
+
+// ADDITIONAL FEATURES
+$(document).ready(function () {
+  // SECTIONS HEIGHT BASED ON VIEWPORT
+  resizeDiv();
+
+  // SLICK SLIDER
+  $('.portfolio-slider').slick({
+    arrows: false,
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3 } },
+
+
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2 } },
+
+
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1 } }] });
+
+
+
+
+
+  // CUSTOM SLICK NAV
+  $('.next-slide').click(function () {
+    $(".slick-slider").slick('slickNext');
+  });
+
+  $('.prev-slide').click(function () {
+    $(".slick-slider").slick('slickPrev');
+  });
+
+
+  $('.slick-slider').on('edge', function (event, slick, direction) {
+    if (direction === 'left') {
+      $(".next-slide").attr('src', 'https://himigatliwanag.files.wordpress.com/2016/01/slick-next-edge.png');
+    }
+  }).on('swipe', function (event, slick, direction) {
+    if (direction === 'right') {
+      $(".next-slide").attr('src', 'https://himigatliwanag.files.wordpress.com/2016/01/slick-next-fill.png');
+    }
+  });
+
+  $('.slick-slider').on('edge', function (event, slick, direction) {
+    if (direction === 'right') {
+      $(".prev-slide").attr('src', 'https://himigatliwanag.files.wordpress.com/2016/01/slick-prev-edge.png');
+    }
+  }).on('swipe', function (event, slick, direction) {
+    if (direction === 'left') {
+      $(".prev-slide").attr('src', 'https://himigatliwanag.files.wordpress.com/2016/01/slick-prev-fill.png');
+    }
+  });
+
+
+});
+
+window.onresize = function (event) {
+  resizeDiv();
+};
+
+function resizeDiv() {
+  vpw = $(window).width();
+  vph = $(window).height();
+  $('.page-sections').css({ 'min-height': vph + 'px' });
+};
+
+$(function () {
+  ScrollLayout.init();
+});
+
+
+
+// ____________________________ Cache selectors
+var lastId,
+topMenu = $("#navbar"),
+topMenuHeight = topMenu.outerHeight() + 15,
+// All list items
+menuItems = topMenu.find("a"),
+// Anchors corresponding to menu items
+scrollItems = menuItems.map(function () {
+  var item = $($(this).attr("href"));
+  if (item.length) {return item;}
+});
+
+// Bind click handler to menu items
+// so we can get a fancy scroll animation
+menuItems.click(function (e) {
+  var href = $(this).attr("href"),
+  offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+  $('html, body').stop().animate({
+    scrollTop: offsetTop },
+  300);
+  e.preventDefault();
+});
+
+// Bind to scroll
+$(window).scroll(function () {
+  // Get container scroll position
+  var fromTop = $(this).scrollTop() + topMenuHeight;
+
+  // Get id of current scroll item
+  var cur = scrollItems.map(function () {
+    if ($(this).offset().top < fromTop)
+    return this;
+  });
+  // Get the id of the current element
+  cur = cur[cur.length - 1];
+  var id = cur && cur.length ? cur[0].id : "";
+
+  if (lastId !== id) {
+    lastId = id;
+    // Set/remove active class
+    menuItems.
+    parent().removeClass("active").
+    end().filter("[href='#" + id + "']").parent().addClass("active");
+  }
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
 </html>
+ 
