@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="js">
+<html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Welcome new students 2020</title>
-        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Teko" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900'>
         <!-- Link Icon -->
         <link href='images/logo.png' rel='icon' type='image/x-icon'/>
         <link href='https://i.imgur.com/DFB9dAr.jpg' rel='apple-touch-icon'/>
@@ -26,653 +24,367 @@
         <meta content='#f7f9f8' name='msapplication-navbutton-color'/>
         <meta content='#f7f9f8' name='apple-mobile-web-app-status-bar-style'/>
         <meta content='yes' name='apple-mobile-web-app-capable'/>
-            <style>
-            /* --- Template Styles --- */
-            body {
-            width: 100%;
-            *zoom: 1;
-            display: block;
-            }
-            body:before, body:after {
-            content: "";
-            display: table;
-            }
-            body:after {
-            clear: both;
-            }
-            .btn {
-            display: inline-block;
-            padding: 6.6666666667px 10px;
-            line-height: 1.2;
-            font-weight: normal;
-            background-color: #BDBDBD;
-            border: 0;
-            border-radius: 6px;
-            margin-bottom: 0;
-            color: #fff;
-            }
-            .btn:hover, a .btn:hover, .btn.active {
-            background-color: #a4a4a4;
-            border-color: #a4a4a4;
-            text-decoration: none;
-            }
-            .btn-primary {
-            color: #fff;
-            }
-            .btn-secondary {
-            background-color: #9E9E9E;
-            border-color: #9E9E9E;
-            color: #fff;
-            }
-            .btn-secondary:hover, a .btn-secondary:hover, .btn-secondary.active {
-            background-color: #787878;
-            border-color: #787878;
-            }
-            .btn:active, .btn.active {
-            outline: 0;
-            }
-            .btn.disabled, .btn[disabled] {
-            pointer-events: none;
-            cursor: not-allowed;
-            opacity: 0.5;
-            filter: alpha(opacity=50);
-            box-shadow: none;
-            }
-            .btn.full {
-            width: 100%;
-            }
-            .btn-skinny {
-            padding: 0.5em 1em;
-            font-size: 0.75em;
-            line-height: normal;
-            }
-            .btn-skinny.full {
-            width: 100%;
-            }
-            .btn-large {
-            padding: 0.75em 2em;
-            font-size: 1em;
-            line-height: normal;
-            }
-            .btn-large.full {
-            width: 100%;
-            }
-            .btn-block, input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
-            display: block;
-            width: 100%;
-            margin-right: 0;
-            padding-right: 0;
-            padding-left: 0;
-            }
-            button, .btn {
-            cursor: pointer;
-            text-align: center;
-            vertical-align: middle;
-            background-image: none;
-            -webkit-appearance: none;
-            }
-            .btn:last-child,
-            input.btn {
-            margin-right: 0;
-            }
-            img {
-            vertical-align: middle;
-            max-width: 100%;
-            }
-            /*Dark Colors*/
-            /*Light Colors*/
-            * {
+        <title>Welcome new students 2020</title>
+        <style>
+            *, *:before, *:after {
             box-sizing: border-box;
             }
-            html {
-            background: #222;
-            font-size: 100%;
-            font-weight: normal;
-            -webkit-text-size-adjust: 100%;
-            -ms-text-size-adjust: 100%;
-            -webkit-font-smoothing: antialiased !important;
-            text-rendering: optimizelegibility;
-            -moz-osx-font-smoothing: grayscale;
+            h1 {
+            margin-top: 0;
+            margin-bottom: 0.25em;
+            font-size: 2em;
+            font-weight: 900;
+            line-height: 0.9;
             }
+            p {
+            margin: 0;
+            color: #a9b1b3;
+            }
+            a {
+            padding: 0.5em 1em;
+            font-size: 0.8em;
+            color: #a9b1b3;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            border: 1px solid #a9b1b3;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            }
+            a:hover, a:active, a:focus {
+            color: #fff;
+            background-color: #a9b1b3;
+            }
+            figure {
+            margin: 0;
+            }
+            /**
+            * Text Selection
+            */
+            ::-moz-selection {
+            color: #fff;
+            background-color: #d0f2ee;
+            text-shadow: none;
+            }
+            ::selection {
+            color: #fff;
+            background-color: #d0f2ee;
+            text-shadow: none;
+            }
+            /**
+            * Body
+            */
             body {
-            font-family: 'Space Mono', monospace;
-            font-size: 15px;
+            font-family: monospace;
+            font-size: 100%;
+            line-height: 1.6;
+            color: #000;
+            background-color: #fff;
+            }
+            @media (min-width: 20em) {
+            body {
+            font-size: 102.5%;
+            }
+            }
+            @media (min-width: 30em) {
+            body {
+            font-size: 105%;
+            }
+            }
+            @media (min-width: 54em) {
+            body {
+            font-size: 107.5%;
+            }
+            }
+            @media (min-width: 64em) {
+            body {
+            font-size: 110%;
+            }
+            }
+            @media (min-width: 76.5em) {
+            body {
+            font-size: 115%;
+            }
+            }
+            @media (min-width: 114em) {
+            body {
+            font-size: 125%;
+            }
+            }
+            /**
+            * Components
+            */
+            .post {
+            min-height: 100vh;
+            width: 100%;
+            border: 0.5em solid #fff;
+            margin-bottom: 10%;
+            }
+            @media (min-width: 54em) {
+            .post {
+            display: -webkit-box;
+            display: flex;
+            height: 100vh;
+            min-height: 40em;
+            }
+            }
+            .post > *:first-child {
             position: relative;
+            height: 14em;
+            background-color: #000;
             }
-            img {
-            max-width: 100%;
-            vertical-align: middle;
-            font-size: 12px;
-            color: #666;
+            @media (min-width: 30em) {
+            .post > *:first-child {
+            height: 18em;
             }
-            .contained {
-            max-width: 900px;
-            margin: 0 auto;
             }
-            section {
-            display: block;
-            *zoom: 1;
-            display: block;
+            @media (min-width: 54em) {
+            .post > *:first-child {
+            flex-basis: 50%;
+            max-width: 50%;
+            height: auto;
             }
-            section:before, section:after {
-            content: "";
-            display: table;
             }
-            section:after {
-            clear: both;
+            @media (min-width: 76.5em) {
+            .post > *:first-child {
+            flex-basis: 60%;
+            max-width: 60%;
             }
-            .section-one {
-            background: #222;
-            color: #ddd;
             }
-            .bio-section {
-            background: #1F1F1F;
-            color: #fff;
-            padding: 120px 40px;
+            @media (min-width: 54em) {
+            .post > *:last-child {
+            flex-basis: 50%;
+            max-width: 50%;
             }
-            .section-two {
-            background: #ABEEF4;
-            color: #FF5722;
             }
-            .section-three {
-            background: #292A38;
-            color: #fff;
+            @media (min-width: 76.5em) {
+            .post > *:last-child {
+            flex-basis: 40%;
+            max-width: 40%;
             }
-            .section-four {
-            background: #C1F2D5;
-            color: #3F51B5;
             }
-            .section {
-            min-height: 90vh;
+            .post__container {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            flex-direction: column;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            padding: 2em;
+            overflow-y: auto;
+            }
+            .post__category {
             position: relative;
+            font-weight: 600;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
             overflow: hidden;
             }
-            .section .section-title {
+            .post__category:before {
+            content: "";
             position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            z-index: 5;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 50%;
+            background-color: #000;
+            -webkit-animation: slide-in 1s ease-in both 0.5s;
+            animation: slide-in 1s ease-in both 0.5s;
             }
-            h2 {
-            font-family: 'Teko', sans-serif;
+            .post__content {
+            padding: 2em 0;
+            }
+            @media (min-width: 54em) {
+            .post__content {
+            padding: 0 4em;
+            }
+            }
+            .post__time {
+            display: inline-block;
+            margin-bottom: 0.5em;
+            font-weight: 600;
+            font-size: 0.8em;
             text-transform: uppercase;
-            line-height: 0.8;
-            text-align: center;
-            letter-spacing: 8px;
-            margin: 0;
-            max-width: 100%;
-            font-weight: 400;
-            display: block;
-            font-size: 5rem;
+            letter-spacing: 0.1em;
             }
-            @media (min-width: 600px) {
-            h2 {
-            font-size: 8rem;
+            .post__header span {
+            display: inline-block;
+            -webkit-animation: slide-up 0.8s ease-in-out both;
+            animation: slide-up 0.8s ease-in-out both;
             }
+            .post__header span:nth-child(1) {
+            -webkit-animation-delay: 0.1s;
+            animation-delay: 0.1s;
             }
-            @media (max-height: 400px) {
-            h2 {
-            font-size: 3.5rem;
+            .post__header span:nth-child(2) {
+            -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
             }
+            .post__header span:nth-child(3) {
+            -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
             }
-            h2 .inner-voice {
-            font-size: 2.5rem;
-            display: block;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            .post__text {
+            font-weight: 300;
+            -webkit-animation: fade-in 0.8s ease-in-out both 0.5s;
+            animation: fade-in 0.8s ease-in-out both 0.5s;
             }
-            @media (min-width: 600px) {
-            h2 .inner-voice {
-            font-size: 5rem;
+            .post__link {
+            text-align: right;
             }
-            }
-            @media (max-height: 400px) {
-            h2 .inner-voice {
-            font-size: 2.5rem;
-            }
-            }
-            h2 .inner-inner-voice {
-            font-size: 1.5rem;
-            display: block;
-            margin-bottom: 10px;
-            }
-            @media (min-width: 600px) {
-            h2 .inner-inner-voice {
-            font-size: 3rem;
-            }
-            }
-            @media (max-height: 400px) {
-            h2 .inner-inner-voice {
-            font-size: 2rem;
-            }
-            }
-            .js .inner-voice {
-            opacity: 0;
-            }
-            .js .inner-voice.seen {
-            -webkit-transition: opacity 1.5s ease;
-            transition: opacity 1.5s ease;
-            -webkit-transition-delay: 0.25s;
-            transition-delay: 0.25s;
-            opacity: 1;
-            }
-            .js .inner-inner-voice {
-            opacity: 0;
-            }
-            .js .inner-inner-voice.seen {
-            -webkit-transition: opacity 1.5s ease;
-            transition: opacity 1.5s ease;
-            -webkit-transition-delay: 1s;
-            transition-delay: 1s;
-            opacity: 1;
-            }
-            header {
-            position: fixed;
+            /**
+            * Helpers
+            */
+            .absolute-bg {
+            position: absolute;
             top: 0;
             left: 0;
-            z-index: 100;
+            height: 100%;
+            width: 100%;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            -webkit-animation: fade-in 0.8s ease-in-out both 1s;
+            animation: fade-in 0.8s ease-in-out both 1s;
+            }
+            /**
+            * Animations
+            */
+            @-webkit-keyframes slide-in {
+            0% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            }
+            }
+            @keyframes slide-in {
+            0% {
+            -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+            }
+            100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            }
+            }
+            @-webkit-keyframes slide-up {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            }
+            90% {
+            opacity: 1;
+            }
+            100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            }
+            }
+            @keyframes slide-up {
+            0% {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 100%, 0);
+            }
+            90% {
+            opacity: 1;
+            }
+            100% {
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+            }
+            }
+            @-webkit-keyframes fade-in {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+            }
+            @keyframes fade-in {
+            0% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 1;
+            }
+            }
+            .section {
+                min-height: 90vh;
+                position: relative;
+                overflow: hidden;
+            }
+            .section-one {
+                background: #222;
+                color: #ddd;
+            }
+            section {
+                display: block;
+                *zoom: 1;
+                display: block;
+            }
+            .section .section-title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 5;
+                font-size: 3em;
             }
             .bg-fadein {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: url(https://i.imgur.com/HwAUTEe.jpg);
-            background-size: cover;
-            background-position: center center;
-            opacity: 0.25;
-            display: none;
-            }
-            .name {
-            font-family: 'Space Mono', monospace;
-            font-size: 18px;
-            line-height: 1.25;
-            letter-spacing: 3px;
-            font-weight: normal;
-            color: #fff;
-            padding: 20px;
-            margin: 0;
-            }
-            .bio-section {
-            font-size: 1.25rem;
-            line-height: 1.55;
-            }
-            .bio-section .job, .bio-section .city {
-            display: block;
-            text-transform: uppercase;
-            opacity: 0.5;
-            }
-            .bio-section .city {
-            font-size: 1rem;
-            }
-            .bio-section p {
-            font-family: monospace;
-            font-weight: 300;
-            }
-            .bio-section a, .bio-section a:visited {
-            color: #00AFA6;
-            }
-            .popper .pop-item {
-            position: absolute;
-            bottom: -100%;
-            }
-            .popper .pop-item img {
-            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-            border-radius: 3px;
-            -webkit-transition: -webkit-transform 250ms ease;
-            transition: -webkit-transform 250ms ease;
-            transition: transform 250ms ease;
-            transition: transform 250ms ease, -webkit-transform 250ms ease;
-            }
-            .popper .pop-item a:hover img, .popper .pop-item a:focus img, .popper .pop-item a:active img {
-            -webkit-transform: scale(1.01255);
-            transform: scale(1.01255);
-            }
-            .popper .pop-item.left {
-            left: 0;
-            text-align: left;
-            -webkit-transition: bottom 800ms ease;
-            transition: bottom 800ms ease;
-            z-index: 1;
-            width: 50%;
-            max-width: 500px;
-            }
-            @media (min-width: 400px) {
-            .popper .pop-item.left {
-            left: 1%;
-            }
-            }
-            @media (min-width: 600px) {
-            .popper .pop-item.left {
-            left: 5%;
-            width: 30%;
-            }
-            }
-            @media (min-width: 1200px) {
-            .popper .pop-item.left {
-            left: 10%;
-            }
-            }
-            .popper .pop-item.left.popped {
-            bottom: -10%;
-            }
-            .popper .pop-item.middle {
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            z-index: 0;
-            text-align: center;
-            -webkit-transition: bottom 1000ms ease;
-            transition: bottom 1000ms ease;
-            width: 90%;
-            max-width: 900px;
-            }
-            @media (min-width: 600px) {
-            .popper .pop-item.middle {
-            width: 60%;
-            }
-            }
-            .popper .pop-item.middle.popped {
-            bottom: -0%;
-            }
-            .popper .pop-item.right {
-            right: 0;
-            text-align: right;
-            -webkit-transition: bottom 950ms ease;
-            transition: bottom 950ms ease;
-            z-index: 2;
-            width: 30%;
-            max-width: 300px;
-            }
-            @media (min-width: 400px) {
-            .popper .pop-item.right {
-            right: 1%;
-            }
-            }
-            @media (min-width: 600px) {
-            .popper .pop-item.right {
-            right: 5%;
-            width: 17%;
-            }
-            }
-            @media (min-width: 1200px) {
-            .popper .pop-item.right {
-            right: 10%;
-            }
-            }
-            .popper .pop-item.right.popped {
-            bottom: -10%;
-            }
-            .portfolio {
-            padding-top: 120px;
-            padding-bottom: 80px;
-            }
-            .portfolio h2 {
-            color: #DE8A4E;
-            }
-            .frontend, .codepen {
-            width: 100%;
-            float: left;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            display: -webkit-box;
-            display: flex;
-            flex-wrap: wrap;
-            }
-            .frontend h2, .codepen h2 {
-            color: #8A7DC2;
-            font-family: 'Space Mono', monospace;
-            font-size: 30px;
-            line-height: 1.3333;
-            }
-            .frontend a, .codepen a {
-            color: #00AFA6;
-            }
-            .frontend a:visited, .codepen a:visited {
-            color: #C70094;
-            }
-            .frontend a:hover, .frontend a:focus, .frontend a:active,
-            .frontend a:visited:hover, .frontend a:visited:focus, .frontend a:visited:active, .codepen a:hover, .codepen a:focus, .codepen a:active,
-            .codepen a:visited:hover, .codepen a:visited:focus, .codepen a:visited:active {
-            color: #F1001D;
-            }
-            .frontend .left, .frontend .right, .codepen .left, .codepen .right {
-            width: 100%;
-            float: left;
-            }
-            @media (min-width: 600px) {
-            .frontend .left, .frontend .right, .codepen .left, .codepen .right {
-            width: 50%;
-            float: left;
-            }
-            }
-            .frontend .left, .codepen .left {
-            display: -webkit-box;
-            display: flex;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            align-items: center;
-            }
-            .bg-grid {
-            width: 100%;
-            padding: 20px;
-            position: absolute;
-            top: -10%;
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-            }
-            .bg-grid ul {
-            list-style: none outside none;
-            padding: 0;
-            display: block;
-            width: 102.0833333333%;
-            margin: 0 -1.0416666667%;
-            *zoom: 1;
-            display: block;
-            display: -webkit-box;
-            display: flex;
-            flex-wrap: wrap;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            align-items: center;
-            }
-            .bg-grid ul:before, .bg-grid ul:after {
-            content: "";
-            display: table;
-            }
-            .bg-grid ul:after {
-            clear: both;
-            }
-            .bg-grid ul li {
-            display: inline;
-            float: left;
-            width: 47.9166666667%;
-            margin: 0 1.0416666667%;
-            display: -webkit-box;
-            display: flex;
-            position: relative;
-            margin-bottom: 20px;
-            padding: 20px 0;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            align-items: center;
-            opacity: 0.5;
-            text-align: center;
-            }
-            @media (min-width: 600px) {
-            .bg-grid ul li {
-            display: inline;
-            float: left;
-            width: 22.9166666667%;
-            margin: 0 1.0416666667%;
-            margin-bottom: 20px;
-            display: -webkit-box;
-            display: flex;
-            min-height: 15vh;
-            }
-            }
-            .bg-grid ul img {
-            max-width: 100px;
-            }
-            .u-fancy-load > * {
-            -webkit-transform: scale(0);
-            transform: scale(0);
-            -webkit-transition: -webkit-transform 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            transition: -webkit-transform 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            transition: transform 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            transition: transform 150ms cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            }
-            .no-js .u-fancy-load > * {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            }
-            .u-fancy-load--in > * {
-            -webkit-transform: scale(1);
-            transform: scale(1);
-            }
-            footer {
-            background: #292A38;
-            color: #ddd;
-            min-height: 90vh;
-            }
-            footer .social {
-            position: absolute;
-            bottom: 0;
-            padding: 20px 20px 60px;
-            text-align: center;
-            width: 100%;
-            z-index: 1;
-            }
-            @media (max-height: 400px) {
-            footer .social {
-            padding: 20px 20px 40px;
-            }
-            }
-            footer .social ul {
-            list-style: none;
-            padding: 0;
-            }
-            footer .social li {
-            display: inline-block;
-            }
-            footer .social li:after {
-            content: " * ";
-            }
-            footer .social li:last-child:after {
-            content: "";
-            }
-            footer .social a, footer .social a:visited {
-            color: #00AFA6;
-            }
-            footer .social a:hover, footer .social a:focus, footer .social a:active, footer .social a:visited:hover, footer .social a:visited:focus, footer .social a:visited:active {
-            color: #C70094;
-            }
-            .bg-footer {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-image: url(https://i.imgur.com/y4EQRwB.jpg);
-            background-size: cover;
-            background-position: center center;
-            opacity: 0.25;
-            z-index: 0;
-            }
-            .page-count {
-            display: none;
-            }
-            @media (min-width: 400px) {
-            .page-count {
-            display: block;
-            position: relative;
-            color: #fff;
-            position: fixed;
-            text-align: right;
-            top: 50%;
-            right: 0;
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            padding: 20px;
-            }
-            .page-count:hover, .page-count:focus, .page-count:active {
-            cursor: n-resize;
-            color: rgba(255, 255, 255, 0.125);
-            }
-            .page-count:hover .up-caret, .page-count:focus .up-caret, .page-count:active .up-caret {
-            opacity: 1;
-            color: #fff;
-            }
-            .page-count .up-caret {
-            position: absolute;
-            top: 0;
-            right: 20px;
-            opacity: 0;
-            -webkit-transition: opacity 250ms ease;
-            transition: opacity 250ms ease;
-            }
-            .page-count p {
-            margin: 0;
-            padding: 0;
-            line-height: 1;
-            }
-            }
-            @-webkit-keyframes element-from-bottom {
-            0% {
-            -webkit-transform: translate(0, 30%);
-            transform: translate(0, 30%);
-            opacity: 0;
-            }
-            100% {
-            -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-            opacity: 1;
-            }
-            }
-            @keyframes element-from-bottom {
-            0% {
-            -webkit-transform: translate(0, 30%);
-            transform: translate(0, 30%);
-            opacity: 0;
-            }
-            100% {
-            -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-            opacity: 1;
-            }
-            }
-            .content p {
-                font-size: 1rem;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(https://i.imgur.com/HwAUTEe.jpg);
+                background-size: cover;
+                background-position: center center;
+                opacity: 0.45;
+                display: none;
+            }
+            .footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                padding: 20px;
+                background-color: #000;
+                width: 100%;
+                text-align: center;
             }
         </style>
     </head>
     <body translate="no" >
-        <header>
-            <h1 class="name color-transform">SVCG HẠT LẠC ĐAO - LIỄU ĐỀ - QUỸ NHẤT</h1>
-        </header>
-        <main>
-            <section class="section-one section">
+        <article class="post">
+            <section class="section-one section" style="min-height: 565px;">
                 <h2 class="section-title greeting">TÂN SINH VIÊN 2020</h2>
-                <div class="bg-fadein"></div>
+                <div class="bg-fadein" style="display: block;"></div>
             </section>
-            <section class="bio-section">
-                <div class="contained">
-                    <span class="job">SVCG HẠT LẠC ĐAO - LIỄU ĐỀ - QUỸ NHẤT / CHƯƠNG TRÌNH / CHÀO MỪNG TÂN SINH VIÊN 2020</span>
-                    <span class="city">Địa điểm tại Nhà thờ giáo xứ Phùng Khoang</span>
-                    <div class="content">
-                        <h3>I. MỤC ĐÍCH</h3>
-                        <p>Quy tụ anh chị em sinh viên đang sinh sống, làm việc và học tập tại Hà Nội để cùng nhau xây dựng một môi trường học tập, sinh hoạt lành mạnh, cùng nhau gìn giữ đức tin cũng như giúp đỡ nhau trong cuộc sống thường ngày nơi Thủ Đô.</p>
-                        <h3>II. ĐỊA ĐIỂM & THỜI GIAN</h3>
+            <div class="post__container">
+                <span class="post__category">SVCG HẠT LẠC ĐẠO - LIỄU ĐỀ - QUỸ NHẤT</span>
+                <div class="post__content">
+                    <header>
+                        <time class="post__time">Thứ Năm, lúc 16h ngày 22 tháng 10 năm 2020</time>
+                        <h1 class="post__header">Giáo xứ Phùng Khoang</h1>
+                    </header>
+                    <h3>I. MỤC ĐÍCH</h3>
+                    <p class="post__text">Quy tụ anh chị em sinh viên đang sinh sống, làm việc và học tập tại Hà Nội để cùng nhau xây dựng một môi trường học tập, sinh hoạt lành mạnh, cùng nhau gìn giữ đức tin cũng như giúp đỡ nhau trong cuộc sống thường ngày nơi Thủ Đô.</p>
+                    <h3>II. THỜI GIAN & ĐỊA ĐIỂM</h3>
+                    <p class="post__text">
                         <p>- Thời gian: Thứ Năm lúc 16h, ngày 22 tháng 10 năm 2020</p>
                         <p>- Địa điểm: Tại nhà thờ giáo xứ Phùng Khoang, Trung Văn, Nam Từ Liêm, Hà Nội</p>
-                        <h3>III. CHƯƠNG TRÌNH</h3>
+                    </p>
+                    <h3>III. CHƯƠNG TRÌNH</h3>
+                    <p class="post__text">
                         <p>- 16h - 17h: Đón tiếp, ghi danh</p>
                         <p>- 17h - 17h30: Khởi động và giải tội</p>
                         <p>- 17h30 – 18h: Chia sẻ </p>  
@@ -682,267 +394,21 @@
                         <p>- 21h - 21h30: Trao quà cho tân sinh viên</p>
                         <p>- 21h30 - 22h: Cầu nguyện </p>
                         <p>- Sau 22h: Dọn dẹp, chia tay.</p>
-                        <h3>IV. CHI PHÍ</h3>
-                        <p>- Kinh phí: 50.000đ/1 người (Sale: 80.000đ/2 người)</p>
-                        <h3>V. LƯU Ý</h3>
-                        <p>- Khi đăng ký hãy ghi rõ phương tiện để BTC sắp xếp và chuẩn bị cho bạn chuyến đi.</p>
-                        <h3>VI. ĐĂNG KÝ</h3>
-                        <p>Link đăng ký: <a href="https://bom.to/welcomestudents2020">https://bom.to/welcomestudents2020</a></p>
-                        <p>Group Facebook: <a href="https://fb.com/SVCGHatLacDaoLieuDeQuyNhat/">https://fb.com/SVCGHatLacDaoLieuDeQuyNhat/</a></p>
-                        <p>Email: <a href="mailto: confessions.lacdaolieudequynhat@gmail.com">confessions.lacdaolieudequynhat@gmail.com</a></p>
-                    </div>
+                    </p>
+                    <h3>IV. CHI PHÍ</h3>
+                    <p class="post__text">- Kinh phí: 50.000đ/ 1 người (Sale: 80.000đ/ 2 người)</p>
+                    <h3>V. LƯU Ý</h3>
+                    <p class="post__text">
+                        - Khi đăng ký nhớ điền đầy đủ và thông tin chính xác để BTC sắp xếp và chuẩn bị cho các bạn.
+                    </p>
                 </div>
-            </section>
-            <section class="section-two section section-popup">
-                <h2 class="section-title"><a href="https://bom.to/tansinhvien2020">ĐĂNG KÝ NGAY</a></h2>
-            </section>
-            <section class="section-three section portfolio">
-                <h2>THÔNG TIN LIÊN HỆ</h2>
-                <div class="frontend">
-                    <div class="left">
-                        <h2 class="">BAN ĐẠI DIỆN</h2>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li>
-                                <a href="tel: 0924065860" alt="Anh Micae Nguyễn Công Chính" title="Anh Micae Nguyễn Công Chính">Anh Micae Nguyễn Công Chính - 0924065860</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0588031268" alt="Anh Giuse Đinh Văn Hoàng" title="Anh Giuse Đinh Văn Hoàng">Anh Giuse Đinh Văn Hoàng - 0588031268</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0357775875" alt="Anh Gioan Vũ Văn Thiềm" title="Anh Gioan Vũ Văn Thiềm">Anh Gioan Vũ Văn Thiềm - 0357775875</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0839365077" alt="Anh Antôn Trần Viết Hữu" title="Anh Antôn Trần Viết Hữu">Anh Antôn Trần Viết Hữu - 0839365077</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0969573812" alt="Anh Vinhson Vũ Quang Thịnh" title="Anh Vinhson Vũ Quang Thịnh">Anh Vinhson Vũ Quang Thịnh - 0969573812</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0393932114" alt="Anh Giuse Hoàng Văn Tiên" title="Anh Giuse Hoàng Văn Tiên">Anh Giuse Hoàng Văn Tiên - 0393932114</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0789068092" alt="Chị Maria Trịnh Thị Lan" title="Chị Maria Trịnh Thị Lan">Chị Maria Trịnh Thị Lan - 0789068092</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0357302713" alt="Chị Maria Vũ Thị Nhi" title="Chị Maria Vũ Thị Nhi">Chị Maria Vũ Thị Nhi - 0357302713</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0365253016" alt="Chị Maria Vũ Thị Khuyên" title="Chị Maria Vũ Thị Khuyên">Chị Maria Vũ Thị Khuyên - 0365253016</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0976545915" alt="Chị Maria Đỗ Thị Hạnh" title="Chị Maria Đỗ Thị Hạnh">Chị Maria Đỗ Thị Hạnh - 0976545915</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="post__link">
+                    <a href="https://bom.to/welcomestudents2020">Nhấp vào đây để đăng ký</a>
                 </div>
-                <div class="codepen">
-                    <div class="left">
-                        <h2 class="">Ban Truyền Thông</h2>
-                    </div>
-                    <div class="right">
-                        <ul>
-                            <li>
-                                <a href="tel: 0839365077" alt="Anh Antôn Trần Viết Hữu" title="Anh Antôn Trần Viết Hữu">Anh Antôn Trần Viết Hữu - 0839365077</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0393932114" alt="Anh Giuse Hoàng Văn Tiên" title="Anh Giuse Hoàng Văn Tiên">Anh Giuse Hoàng Văn Tiên - 0393932114</a>
-                            </li>
-                            <li>
-                                <a href="tel: 0946152362" alt="Anh Micae Vũ Hoàng Phi Long" title="Anh Micae Vũ Hoàng Phi Long">Anh Micae Vũ Hoàng Phi Long - 0946152362</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="section-four section fancy-grid-section">
-                <h2 class="section-title">THANKS FOR WATCHING</h2>
-                <div class="bg-grid">
-                    <ul class="u-fancy-load">
-                        <li><img src="https://i.imgur.com/OujuC4F.png" alt="Angry"></li>
-                        <li><img src="https://i.imgur.com/tsrapyV.png" alt="Haha"></li>
-                        <li><img src="https://i.imgur.com/fiw6NOR.png" alt="Sad"></li>
-                        <li><img src="https://i.imgur.com/JSpOBgF.png" alt="Like"></li>
-                        <li><img src="https://i.imgur.com/q5oiSfU.png" alt="Love"></li>
-                        <li><img src="https://i.imgur.com/I9NguLz.png" alt="Wow"></li>
-                        <li><img src="https://i.imgur.com/OujuC4F.png" alt="Angry"></li>
-                        <li><img src="https://i.imgur.com/tsrapyV.png" alt="Haha"></li>
-                        <li><img src="https://i.imgur.com/fiw6NOR.png" alt="Sad"></li>
-                        <li><img src="https://i.imgur.com/JSpOBgF.png" alt="Like"></li>
-                        <li><img src="https://i.imgur.com/q5oiSfU.png" alt="Love"></li>
-                        <li><img src="https://i.imgur.com/I9NguLz.png" alt="Wow"></li>
-                        <li><img src="https://i.imgur.com/OujuC4F.png" alt="Angry"></li>
-                        <li><img src="https://i.imgur.com/tsrapyV.png" alt="Haha"></li>
-                        <li><img src="https://i.imgur.com/fiw6NOR.png" alt="Sad"></li>
-                        <li><img src="https://i.imgur.com/JSpOBgF.png" alt="Like"></li>
-                        <li><img src="https://i.imgur.com/q5oiSfU.png" alt="Love"></li>
-                        <li><img src="https://i.imgur.com/I9NguLz.png" alt="Wow"></li>
-                        <li><img src="https://i.imgur.com/OujuC4F.png" alt="Angry"></li>
-                        <li><img src="https://i.imgur.com/tsrapyV.png" alt="Haha"></li>
-                        <li><img src="https://i.imgur.com/fiw6NOR.png" alt="Sad"></li>
-                        <li><img src="https://i.imgur.com/JSpOBgF.png" alt="Like"></li>
-                        <li><img src="https://i.imgur.com/q5oiSfU.png" alt="Love"></li>
-                        <li><img src="https://i.imgur.com/I9NguLz.png" alt="Wow"></li>
-                        <li><img src="https://i.imgur.com/OujuC4F.png" alt="Angry"></li>
-                        <li><img src="https://i.imgur.com/tsrapyV.png" alt="Haha"></li>
-                        <li><img src="https://i.imgur.com/fiw6NOR.png" alt="Sad"></li>
-                        <li><img src="https://i.imgur.com/JSpOBgF.png" alt="Like"></li>
-                        <li><img src="https://i.imgur.com/q5oiSfU.png" alt="Love"></li>
-                        <li><img src="https://i.imgur.com/I9NguLz.png" alt="Wow"></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer class="section">
-            <h2 class="section-title">I'm online. <span class="inner-voice rise-up">Sometimes...</span> <span class="inner-inner-voice rise-up">Follow me on</span></h2>
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="https://fb.com/100013678592616" alt="Facebook" title="Facebook">Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/joshoangtien" alt="Twitter" title="Twitter">Twitter</a>
-                    </li>
-                    <li>
-                        <a href="https://instagram.com/jos_fairy" alt="Instagram" title="Instagram">Instagram</a>
-                    </li>
-                    <li>
-                        <a href="https://laclieuquy.github.io/gioithieu" alt="Github" title="Github">Github</a>
-                    </li>
-                    <li>
-                        <a href="mailto: confessions.lacdaolieudequynhat@gmail.com">Email</a>
-                    </li>
-                </ul>
             </div>
-            <div class="bg-footer"></div>
+        </article>
+        <footer class="footer">
+            <a href="https://bom.to/welcomestudents2020">Đăng ký ngay</a>
         </footer>
-        <div class="page-count color-transform">
-            <span class="up-caret">^</span>
-            <p class="section-current"></p>
-            <p>-</p>
-            <p class="section-count"></p>
-        </div>
-        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-        <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/noframework.waypoints.min.js'></script>
-        <script id="rendered-js" >
-            //Set count for total number of sections
-            $('.section-count').text($('.section').size());
-            
-            //Increase counter i when section passes
-            $('.section').each(function (i, el) {
-              var waypoint = new Waypoint({
-                element: el,
-                offset: '50%',
-                handler: function (direction) {
-                  if (direction == 'down') {
-                    $('.section-current').text(i + 1);
-                  } else {
-                    $('.section-current').text(i);
-                  }
-                } });
-            
-            });
-            
-            //Scroll back to top
-            var $toplink = $('.page-count');
-            $toplink.click(function () {
-              $('html, body').animate({
-                scrollTop: $('body').offset().top },
-              500);
-            });
-            
-            //Full Height Sections
-            //http://stackoverflow.com/questions/9214040/how-to-properly-set-the-100-div-height-to-match-document-window-height
-            $(function () {
-              var fullHeight = $('.section');
-              var windowH = $(window).height();
-              var wrapperH = fullHeight.height();
-              if (windowH > wrapperH) {
-                fullHeight.css({ 'min-height': $(window).height() + 'px' });
-              }
-              $(window).resize(function () {
-                var windowH = $(window).height();
-                var wrapperH = fullHeight.height();
-                var differenceH = windowH - wrapperH;
-                var newH = wrapperH + differenceH;
-                //var truecontentH = $('#truecontent').height();
-                //if(windowH > truecontentH) {
-                fullHeight.css('min-height', newH + 'px');
-                //}
-            
-              });
-            });
-            
-            //Example Work Popups
-            $('.section-popup').each(function (i, el) {
-              var waypoint = new Waypoint({
-                element: el,
-                offset: '50%',
-                handler: function (direction) {
-                  if (direction == 'down') {
-                    $('.section-popup .pop-item').addClass('popped');
-                  }
-                } });
-            
-            });
-            
-            //Fancy Grid Start Animation
-            $('.fancy-grid-section').each(function (i, el) {
-              var waypoint = new Waypoint({
-                element: el,
-                offset: '75%',
-                handler: function (direction) {
-                  if (direction == 'down') {
-                    //Grid Loading Animation
-                    (function () {
-                      var speed = 2500,
-                      containers = document.getElementsByClassName("u-fancy-load");
-                      for (var c = 0; c < containers.length; c++) {if (window.CP.shouldStopExecution(0)) break;
-                        var container = containers[c],
-                        children = container.children;
-            
-                        if (!container.classList.contains("delay-set")) {
-                          container.classList.add("delay-set");
-            
-                          for (var i = 0; i < children.length; i++) {if (window.CP.shouldStopExecution(1)) break;
-                            var child = children[i],
-                            childOffset = child.getBoundingClientRect(),
-                            offset = childOffset.left * 0.8 + childOffset.top,
-                            delay = parseFloat(offset / speed).toFixed(2);
-            
-                            child.style.webkitTransitionDelay = delay + "s";
-                            child.style.transitionDelay = delay + "s";
-                          }window.CP.exitedLoop(1);
-                        }
-                        container.classList.add("u-fancy-load--in");
-                      }window.CP.exitedLoop(0);
-                    })();
-                  }
-                } });
-            
-            });
-
-            //Hero Background Fadein
-            $('.bg-shell').ready(function () {
-              $('.bg-fadein').fadeIn(750);
-            });
-            
-            
-            //Fade words in Footer -- Waypoints
-            $('footer').each(function (i, el) {
-              var waypoint = new Waypoint({
-                element: el,
-                offset: '50%',
-                handler: function (direction) {
-                  if (direction == 'down') {
-                    $('.rise-up').addClass('seen');
-                  }
-                } });
-            
-            });           
-        </script>
     </body>
 </html>
